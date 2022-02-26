@@ -1,8 +1,773 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="refresh" content="15;url=https://www.hoangvupc.com/">
+    <link rel="icon" href="assets/img/apple.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/bdc62e8f65.js" crossorigin="anonymous"></script>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Hoàng Vũ</title>
 </head>
+
 <body>
-...
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Hoàng Vũ</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Hackintosh</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Tôi là ai?</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Dịch Vụ</a></li>
+                    <li class="nav__item"><a href="#Bank" class="nav__link">Thông tin tài khoản</a></li>
+                    <li class="nav__item"><a href="#Tainguyen" class="nav__link">Tài Nguyên</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Liên hệ</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Hackintosh</h1>
+                    <h6 class="home__subtitle">Hackintosh là hệ thống macOS <br> chạy trên phần cứng không phải của
+                        Apple.
+                    </h6>
+                    <a href="#about" class="button">Xem tiếp</a>
+                </div>
+
+                <img src="assets/img/apple.png" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">Tôi là ai?</span>
+                    <h2 class="section-title about__initial">Hoàng Vũ<br>
+                        <h3>Vũ Tuấn Hoàng</h3>
+                    </h2>
+                    <br>
+                    <p class="about__description">Học tại FPT University
+                    </p>
+                    <a href="#services" class="button">Xem tiếp</a>
+                </div>
+
+                <img src="assets/img/pic.png" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--========== SERVICES ==========-->
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Dịch Vụ</span>
+            <h2 class="section-title">Làm sao để tôi cài Hackintosh lên máy bạn?</h2>
+
+            <div class="services__container  bd-grid">
+
+                <div class="services__content">
+
+                    <h3 class="services__title">Online</h3>
+                    <p class="services__description">Bạn sẽ tải các tài nguyên sau đó mình sẽ teamviewer làm cho bạn,
+                        các bước không thể teamviewer sẽ call video để hướng đẫn bạn làm nhé<br> vd : setup bios, cài
+                        mac
+                        ,...</p>
+                </div>
+                <div class="services__content">
+
+                    <h3 class="services__title">Offline</h3>
+                    <p class="services__description">Nếu bạn ở gần thì chỉ cần đưa máy đến chỗ mình <br> hoặc mình sẽ
+                        đến chỗ bạn <br> việc
+                        còn lại chờ máy lên thoai :3</p>
+                </div>
+            </div>
+        </section>
+
+        <!--========== MENU ==========-->
+        <section class="menu section bd-container" id="Bank">
+            <span class="section-subtitle">Các hình thức thanh toán</span>
+            <h2 class="section-title">Thông Tin Ngân Hàng</h2><br>
+            <div class="services__content">
+                <h3 class="services__title">Nên chuyển khoản vào TPbank</h3>
+            </div>
+
+            <div class="menu__container bd-grid">
+
+                <div class="menu__content">
+                    <img src="assets/img/tp.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">TP Bank</h3>
+                    <p class="menu__detail" id="p1">02043248401</p>
+                    <span class="menu__preci">Vũ Tuấn Hoàng</span>
+                    <button onclick="copyToClipboard('#p1')" class="button menu__button"><i
+                            class='far fa-copy'></i></button>
+                </div>
+                <div class="menu__content">
+                    <img src="assets/img/vt.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">Viettelpay</h3>
+                    <span class="menu__detail" id="sdt">0382828223</span>
+                    <span class="menu__preci">Vũ Tuấn Hoàng</span>
+                    <button onclick="copyToClipboard('#sdt')" class="button menu__button"><i
+                            class='far fa-copy'></i></button>
+                </div>
+                <div class="menu__content">
+                    <img src="assets/img/momo.jpg" alt="" class="menu__img">
+                    <h3 class="menu__name">MOMO</h3>
+                    <span class="menu__detail" id="sdt">0382828223</span>
+                    <span class="menu__preci">Vũ Tuấn Hoàng</span>
+                    <button onclick="copyToClipboard('#sdt')" class="button menu__button"><i
+                            class='far fa-copy'></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="app section bd-container" id="Tainguyen">
+            <div class="app__container">
+                <span class="section-subtitle">Tài nguyên</span>
+                <h2 class="section-title">Thông Tin File</h2>
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+                    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+                    crossorigin="anonymous" />
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+                    rel="stylesheet">
+
+                <div>
+                    <!-- Tab items -->
+                    <div class="tabs">
+                        <a href="#Tainguyen" class="nav__link">
+                            <div class="line"></div>
+                            <div class="tab-item">
+                                <i class="fa fa-apple"></i> <br>
+                                Monterrey
+                            </div>
+                        </a>
+                        <a href="#Tainguyen" class="nav__link">
+                            <div class="tab-item active">
+                                <i class="fa fa-apple"></i> <br>
+                                Big Sur
+                            </div>
+                        </a>
+                        <a href="#Tainguyen" class="nav__link">
+                            <div class="tab-item">
+                                <i class="fa fa-apple"></i> <br>
+                                Catalina
+                            </div>
+                        </a>
+                        <a href="#Tainguyen" class="nav__link">
+                            <div class="tab-item">
+                                <i class="fa fa-list"></i> <br>
+                                Other
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <table style="width:100%">
+                                <tr>
+                                    <td class="left2"><br></td>
+                                </tr>
+                                <tr>
+                                    <th class="left2">Number</th>
+                                    <th>Name File</th>
+                                    <th>Link Download</th>
+                                    <th>Size file</th>
+                                </tr>
+                                <tr>
+                                    <td class="left2">1</td>
+                                    <td rowspan="1" class="left2">Monterrey</td>
+                                    <td><a href="https://drive.google.com/file/d/11G-iS1CGS5t9KBOfNkaBpnReBNzpeNRp/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/ES8uqOSj7e9Hr1RHa3SlfBgBJJTNYZsT2SfR15ZB505Gig?e=cRKmzq"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>12GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">2</td>
+                                    <td rowspan="1" class="left2">Anhdvboot</td>
+                                    <td><a href="https://drive.google.com/file/d/1pqk3lSAxPEukj1b8wMRZP35L7xSEvJ9k/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EfTOpObL0_5Ho0vos67tIaIBJBUuHKfwsWIKmwP0xq1xIQ?e=Gx4XVL"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>2GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">3</td>
+                                    <td rowspan="1" class="left2">Anydesk</td>
+                                    <td><a href="https://download.Anydesk.com/AnyDesk.exe" target="_blank">
+                                            Anydesk.com
+                                    </td>
+                                    <td>34MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">4</td>
+                                    <td rowspan="1" class="left2">TeraByteDrive</td>
+                                    <td><a href="https://drive.google.com/file/d/1aBctj-GRcSUW-Erai9ygyE2svcxuQgcU/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EaUhKRn8FDVEkvts6POXp6sBcfZRGNpbYfYhA3rsRWMwsg?e=KlrAx8"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>7MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">5</td>
+                                    <td rowspan="1" class="left2">EasyUEFI.Enterprise</td>
+                                    <td><a href="https://drive.google.com/file/d/1Xs2f0mexoKoDIiQ6BzJLftJbOc65OY83/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EWaZRueBZWJAsRWOdgL62ZwBvYe4yTN7SOt0oKFqh2RgIg?e=KZKaxu"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>13MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">6</td>
+                                    <td rowspan="1" class="left2">MiniTool Partition Wizard 12 Portable</td>
+                                    <td><a href="https://drive.google.com/file/d/1a-c5zPO2mY5TP3XVQTcp9FdyUpcE3p9X/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EdZl_kOn9sJAmWf8QhYJe0sBbixzPKap5pcLSZm2LxOyyA?e=2NMCJl"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>23MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">7</td>
+                                    <td rowspan="1" class="left2">Explorer++ 64 bit</td>
+                                    <td><a href="https://explorerplusplus.com/software/explorer++_1.3.5_x64.zip"
+                                            target="">
+                                            Explorer++
+                                    </td>
+                                    <td>308 byte</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="left2">8</td>
+                                    <td rowspan="1" class="left2">AIDA64.v6.30.5500.7z</td>
+                                    <td><a href="https://drive.google.com/file/d/1UJEb-9pYwCwIt_sOeQMzOyhBh2i941Y7/view?usp=sharing"
+                                            target="_blank">
+                                            <p> Google Drive <b> | </b>
+                                                <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EZdXpWlDFGtJnkb_D2i0QooBMHsACYJKKyU7lO6pZjcVhw?e=LoJkQp"
+                                                    target="_blank">
+                                                    OneDrive
+                                            </p>
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">9</td>
+                                    <td rowspan="1" class="left2">Rufus</td>
+                                    <td><a href="https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13p.exe"
+                                            target="_blank">
+                                            Rufus.ie
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">10</td>
+                                    <td rowspan="1" class="left2">Teamviewer</td>
+                                    <td><a href="https://dl.teamviewer.com/download/TeamViewerQS.exe" target="_blank">
+                                            Teamviewer
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane">
+                            <table style="width:100%">
+                                <tr>
+
+                                </tr>
+                                <tr>
+                                    <td class="left2"><br></td>
+                                </tr>
+                                <tr>
+                                    <th class="left2">Number</th>
+                                    <th>Name File</th>
+                                    <th>Link Download</th>
+                                    <th>Size file</th>
+                                </tr>
+                                <tr>
+                                    <td class="left2">1</td>
+                                    <td rowspan="1" class="left2">Big Sur</td>
+                                    <td><a href="https://drive.google.com/file/d/1LWuTvlS7FifbJfZwaYWDtfc89S7K348D/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/ER6tBrjf8pZKooCLSEZtGXUBkj34ygmIFPRvg_9DACjiVw?e=CPoA7o"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>12GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">2</td>
+                                    <td rowspan="1" class="left2">Anhdvboot</td>
+                                    <td><a href="https://drive.google.com/file/d/1pqk3lSAxPEukj1b8wMRZP35L7xSEvJ9k/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EfTOpObL0_5Ho0vos67tIaIBJBUuHKfwsWIKmwP0xq1xIQ?e=Gx4XVL"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>2GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">3</td>
+                                    <td rowspan="1" class="left2">Anydesk</td>
+                                    <td><a href="https://download.Anydesk.com/AnyDesk.exe" target="_blank">
+                                            Anydesk.com
+                                    </td>
+                                    <td>34MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">4</td>
+                                    <td rowspan="1" class="left2">TeraByteDrive</td>
+                                    <td><a href="https://drive.google.com/file/d/1aBctj-GRcSUW-Erai9ygyE2svcxuQgcU/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EaUhKRn8FDVEkvts6POXp6sBcfZRGNpbYfYhA3rsRWMwsg?e=KlrAx8"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>7MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">5</td>
+                                    <td rowspan="1" class="left2">EasyUEFI.Enterprise</td>
+                                    <td><a href="https://drive.google.com/file/d/1Xs2f0mexoKoDIiQ6BzJLftJbOc65OY83/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EWaZRueBZWJAsRWOdgL62ZwBvYe4yTN7SOt0oKFqh2RgIg?e=KZKaxu"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>13MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">6</td>
+                                    <td rowspan="1" class="left2">MiniTool Partition Wizard 12 Portable</td>
+                                    <td><a href="https://drive.google.com/file/d/1a-c5zPO2mY5TP3XVQTcp9FdyUpcE3p9X/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EdZl_kOn9sJAmWf8QhYJe0sBbixzPKap5pcLSZm2LxOyyA?e=2NMCJl"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>23MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">7</td>
+                                    <td rowspan="1" class="left2">Explorer++ 64 bit</td>
+                                    <td><a href="https://explorerplusplus.com/software/explorer++_1.3.5_x64.zip"
+                                            target="">
+                                            Explorer++
+                                    </td>
+                                    <td>308 byte</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="left2">8</td>
+                                    <td rowspan="1" class="left2">AIDA64.v6.30.5500.7z</td>
+                                    <td><a href="https://drive.google.com/file/d/1UJEb-9pYwCwIt_sOeQMzOyhBh2i941Y7/view?usp=sharing"
+                                            target="_blank">
+                                            <p> Google Drive <b> | </b>
+                                                <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EZdXpWlDFGtJnkb_D2i0QooBMHsACYJKKyU7lO6pZjcVhw?e=LoJkQp"
+                                                    target="_blank">
+                                                    OneDrive
+                                            </p>
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">9</td>
+                                    <td rowspan="1" class="left2">Rufus</td>
+                                    <td><a href="https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13p.exe"
+                                            target="_blank">
+                                            Rufus.ie
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">10</td>
+                                    <td rowspan="1" class="left2">Teamviewer</td>
+                                    <td><a href="https://dl.teamviewer.com/download/TeamViewerQS.exe" target="_blank">
+                                            Teamviewer
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane">
+                            <table style="width:100%">
+                                <tr>
+
+                                </tr>
+                                <tr>
+                                    <td class="left2"><br></td>
+                                </tr>
+                                <tr>
+                                    <th class="left2">Number</th>
+                                    <th>Name File</th>
+                                    <th>Link Download</th>
+                                    <th>Size file</th>
+                                </tr>
+                                <tr>
+                                    <td class="left2">1</td>
+                                    <td rowspan="1" class="left2">Catalina</td>
+                                    <td><a href="https://drive.google.com/file/d/1q0ah2c_ppyDdrdXijg-2stWpm9KKg0R8/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/Eewnn2OzDa5NkOJqQpSZUDcBPeZnWFV3pm63nXK_lEreZQ?e=pjrbiO"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>8GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">2</td>
+                                    <td rowspan="1" class="left2">Anhdvboot</td>
+                                    <td><a href="https://drive.google.com/file/d/1pqk3lSAxPEukj1b8wMRZP35L7xSEvJ9k/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EfTOpObL0_5Ho0vos67tIaIBJBUuHKfwsWIKmwP0xq1xIQ?e=Gx4XVL"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>2GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">3</td>
+                                    <td rowspan="1" class="left2">Anydesk</td>
+                                    <td><a href="https://download.Anydesk.com/AnyDesk.exe" target="_blank">
+                                            Anydesk.com
+                                    </td>
+                                    <td>34MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">4</td>
+                                    <td rowspan="1" class="left2">TeraByteDrive</td>
+                                    <td><a href="https://drive.google.com/file/d/1aBctj-GRcSUW-Erai9ygyE2svcxuQgcU/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EaUhKRn8FDVEkvts6POXp6sBcfZRGNpbYfYhA3rsRWMwsg?e=KlrAx8"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>7MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">5</td>
+                                    <td rowspan="1" class="left2">EasyUEFI.Enterprise</td>
+                                    <td><a href="https://drive.google.com/file/d/1Xs2f0mexoKoDIiQ6BzJLftJbOc65OY83/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EWaZRueBZWJAsRWOdgL62ZwBvYe4yTN7SOt0oKFqh2RgIg?e=KZKaxu"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>13MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">6</td>
+                                    <td rowspan="1" class="left2">MiniTool Partition Wizard 12 Portable</td>
+                                    <td><a href="https://drive.google.com/file/d/1a-c5zPO2mY5TP3XVQTcp9FdyUpcE3p9X/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EdZl_kOn9sJAmWf8QhYJe0sBbixzPKap5pcLSZm2LxOyyA?e=2NMCJl"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>23MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">7</td>
+                                    <td rowspan="1" class="left2">Explorer++ 64 bit</td>
+                                    <td><a href="https://explorerplusplus.com/software/explorer++_1.3.5_x64.zip"
+                                            target="">
+                                            Explorer++
+                                    </td>
+                                    <td>308 byte</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="left2">8</td>
+                                    <td rowspan="1" class="left2">AIDA64.v6.30.5500.7z</td>
+                                    <td><a href="https://drive.google.com/file/d/1UJEb-9pYwCwIt_sOeQMzOyhBh2i941Y7/view?usp=sharing"
+                                            target="_blank">
+                                            <p> Google Drive <b> | </b>
+                                                <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EZdXpWlDFGtJnkb_D2i0QooBMHsACYJKKyU7lO6pZjcVhw?e=LoJkQp"
+                                                    target="_blank">
+                                                    OneDrive
+                                            </p>
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">9</td>
+                                    <td rowspan="1" class="left2">Rufus</td>
+                                    <td><a href="https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13p.exe"
+                                            target="_blank">
+                                            Rufus.ie
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">10</td>
+                                    <td rowspan="1" class="left2">Teamviewer</td>
+                                    <td><a href="https://dl.teamviewer.com/download/TeamViewerQS.exe" target="_blank">
+                                            Teamviewer
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane">
+                            <table style="width:100%">
+                                <tr>
+                                    <td class="left2"><br></td>
+                                </tr>
+                                <tr>
+                                    <th class="left2">Number</th>
+                                    <th>Name File</th>
+                                    <th>Link Download</th>
+                                    <th>Size file</th>
+                                </tr>
+                                <tr>
+                                    <td class="left2">1</td>
+                                    <td rowspan="1" class="left2">Mojave</td>
+                                    <td><a href="https://drive.google.com/file/d/11UmPw_0Z6iGLuv4bsNL5UXrTYKJBfA3l/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/ERAxcFrnQDNHtX1zyjfCnvgBb8YIACaKmNFg-Xwi_oljcQ?e=ch3iK3"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>6GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">2</td>
+                                    <td rowspan="1" class="left2">High Sierra</td>
+                                    <td><a href="https://drive.google.com/file/d/19RxmFpzgFphX5paquOJKgqov71h_x4yf/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EegKnlA7-cNFjIKsdO832RMBterY4Sx554H_ZeY3b85xRA?e=W6tF7h"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>5.5GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">3</td>
+                                    <td rowspan="1" class="left2">Windows 10</td>
+                                    <td><a href="https://drive.google.com/file/d/1slDHPPgcCgYzcRxW9gMNttsQ3IZpbQXc/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/Ea_PftqYdA9Ft9ctdWQM_XcBEhS_Y5TR4dFkgI3XiaewHw?e=Q8wN1b"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>5.5GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">4</td>
+                                    <td rowspan="1" class="left2">Windows 11</td>
+                                    <td><a href="https://drive.google.com/file/d/1ZjQIc8WKdnZYP8BvIb1LJrnuy7jWGzK-/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/Ea0PRq7pwCtGvIkegLICGQkBBtByOeGwHHqkm3eQNvwaLQ?e=15RbjQ"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>5.5GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">5</td>
+                                    <td rowspan="1" class="left2">Anhdvboot</td>
+                                    <td><a href="https://drive.google.com/file/d/1pqk3lSAxPEukj1b8wMRZP35L7xSEvJ9k/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EfTOpObL0_5Ho0vos67tIaIBJBUuHKfwsWIKmwP0xq1xIQ?e=Gx4XVL"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>2GB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">6</td>
+                                    <td rowspan="1" class="left2">Anydesk</td>
+                                    <td><a href="https://download.Anydesk.com/AnyDesk.exe" target="_blank">
+                                            Anydesk.com
+                                    </td>
+                                    <td>34MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">7</td>
+                                    <td rowspan="1" class="left2">TeraByteDrive</td>
+                                    <td><a href="https://drive.google.com/file/d/1aBctj-GRcSUW-Erai9ygyE2svcxuQgcU/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EaUhKRn8FDVEkvts6POXp6sBcfZRGNpbYfYhA3rsRWMwsg?e=KlrAx8"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>7MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">8</td>
+                                    <td rowspan="1" class="left2">EasyUEFI.Enterprise</td>
+                                    <td><a href="https://drive.google.com/file/d/1Xs2f0mexoKoDIiQ6BzJLftJbOc65OY83/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EWaZRueBZWJAsRWOdgL62ZwBvYe4yTN7SOt0oKFqh2RgIg?e=KZKaxu"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>13MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">9</td>
+                                    <td rowspan="1" class="left2">MiniTool Partition Wizard 12 Portable</td>
+                                    <td><a href="https://drive.google.com/file/d/1a-c5zPO2mY5TP3XVQTcp9FdyUpcE3p9X/view?usp=sharing"
+                                            target="_blank">
+                                            Google Drive <b> | </b>
+                                            <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EdZl_kOn9sJAmWf8QhYJe0sBbixzPKap5pcLSZm2LxOyyA?e=2NMCJl"
+                                                target="_blank">
+                                                OneDrive
+                                    </td>
+                                    <td>23MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">10</td>
+                                    <td rowspan="1" class="left2">Explorer++ 64 bit</td>
+                                    <td><a href="https://explorerplusplus.com/software/explorer++_1.3.5_x64.zip"
+                                            target="">
+                                            Explorer++
+                                    </td>
+                                    <td>308 byte</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="left2">11</td>
+                                    <td rowspan="1" class="left2">AIDA64.v6.30.5500.7z</td>
+                                    <td><a href="https://drive.google.com/file/d/1UJEb-9pYwCwIt_sOeQMzOyhBh2i941Y7/view?usp=sharing"
+                                            target="_blank">
+                                            <p> Google Drive <b> | </b>
+                                                <a href="https://za7o7cw6-my.sharepoint.com/:u:/g/personal/ruclua9x_coursedeals_org/EZdXpWlDFGtJnkb_D2i0QooBMHsACYJKKyU7lO6pZjcVhw?e=LoJkQp"
+                                                    target="_blank">
+                                                    OneDrive
+                                            </p>
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">12</td>
+                                    <td rowspan="1" class="left2">Rufus</td>
+                                    <td><a href="https://github.com/pbatard/rufus/releases/download/v3.13/rufus-3.13p.exe"
+                                            target="_blank">
+                                            Rufus.ie
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">13</td>
+                                    <td rowspan="1" class="left2">Teamviewer</td>
+                                    <td><a href="https://dl.teamviewer.com/download/TeamViewerQS.exe" target="_blank">
+                                            Teamviewer
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                                <tr>
+                                    <td class="left2">14</td>
+                                    <td rowspan="1" class="left2">Internet.Download.Manager</td>
+                                    <td><a href="https://drive.google.com/file/d/10V5lZNjLUVeRyqWm1tC7mGhqfZhRh19Y/view?usp=sharing" target="_blank">
+                                            Internet.Download.Manager
+                                    </td>
+                                    <td>70MB</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== SERVICES ==========-->
+        <section class="services section bd-container" id="contact">
+            <span class="section-subtitle">Liên Hệ</span>
+            <h2 class="section-title">Thông Tin Của Tôi</h2>
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+                    <h3 class="services__title">
+                        Vũ Tuấn Hoàng <br> FPT University Thạch Thất Hà Nội
+                        KM 29 Đại lộ Thăng Long <br> <a href="tel:+84382828223" target="_blank">SĐT: +84382828223</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+                    <p class="services__description"><a href="https://www.facebook.com/hoangvufpt/" target="_blank"><i
+                                class="fab fa-facebook-square" style='font-size:100px'></i></a></p>
+                    <h3 class="services__title">Facebook</h3>
+                </div>
+                <div class="services__content">
+                    <p class="services__description"><a href="https://www.messenger.com/t/hoangvufpt/"
+                            target="_blank"><i class="fab fa-facebook-messenger" style="font-size:100px;"></i></a></p>
+                    <h3 class="services__title">Messenger</h3>
+                </div>
+                <div class="services__content">
+                    <p class="services__description"><a href="https://zalo.me/0382828223" target="_blank"><img
+                                src="assets/img/Zalo.png" width="100px"></a></p>
+                    <h3 class="services__title">Zalo</h3>
+                </div>
+                <div class="services__content">
+                    <p class="services__description"><a href="tel:+84382828223" target="_blank"><i
+                                class="fas fa-phone-square-alt" style="font-size:100px;"></i></a></p>
+                    <h3 class="services__title">0382828223</h3>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+    <p class="footer__copy">&#169; 2021 HoangVu</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
